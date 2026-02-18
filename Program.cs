@@ -1,8 +1,11 @@
+using Microsoft.ApplicationInsights.Extensibility;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Logging & Application Insights
 builder.Services.AddLogging(logging => logging.AddConsole());
-builder.Services.AddApplicationInsightsTelemetry();
+// builder.Services.AddApplicationInsightsTelemetry();
 
 // DI example
 builder.Services.AddSingleton<IGuidService, GuidService>();
@@ -11,15 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
-app.UseHttpsRedirection();
 
 var summaries = new[]
 {

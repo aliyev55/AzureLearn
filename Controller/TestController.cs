@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 public interface IGuidService { Guid Id { get; } }
 public class GuidService : IGuidService { public Guid Id { get; } = Guid.NewGuid(); }
 
