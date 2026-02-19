@@ -1,5 +1,6 @@
-using Microsoft.ApplicationInsights.Extensibility;
 
+using Microsoft.ApplicationInsights.Extensibility;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,30 +13,32 @@ builder.Services.AddSingleton<IGuidService, GuidService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(
+//     options =>
+// {
+//     // Optional: Customize the Swagger document metadata
+//     options.SwaggerDoc("v1", new OpenApiInfo
+//     {
+//         Version = "v1",
+//         Title = "My API Title",
+//         Description = "A description of my API",
+ 
+//     });
 
-
-
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
+// }
+);
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AzureDemoApi API V1");
+    c.RoutePrefix = ""; // make Swagger available at root URL
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
-
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}
