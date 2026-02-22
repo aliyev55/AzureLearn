@@ -1,0 +1,6 @@
+services:
+  azurelearn:
+    image: azurelearn
+    build:
+      context: .
+      dockerfile: ./Dockerfile

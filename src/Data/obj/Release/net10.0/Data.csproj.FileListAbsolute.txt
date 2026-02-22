@@ -1,0 +1,15 @@
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/bin/Release/net10.0/Data.deps.json
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/bin/Release/net10.0/Data.runtimeconfig.json
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/bin/Release/net10.0/Data.dll
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/bin/Release/net10.0/Data.pdb
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.csproj.AssemblyReference.cache
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.AssemblyInfoInputs.cache
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.AssemblyInfo.cs
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.csproj.CoreCompileInputs.cache
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.sourcelink.json
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.dll
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/refint/Data.dll
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.pdb
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/Data.genruntimeconfig.cache
+/Users/vusal/Documents/Projects/learning/azureLearn/src/Data/obj/Release/net10.0/ref/Data.dll

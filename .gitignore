@@ -1,0 +1,16 @@
+# VS Code specific files and folders
+.vscode/
+
+# Dev container files (optional, depending on preference)
+.devcontainer/
+
+# Environment files
+.env
+devcontainer.env
+
+# Other common ignore patterns
+node_modules/
+dist/
+build/
+*.log
+
