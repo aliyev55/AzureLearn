@@ -13,4 +13,10 @@ node_modules/
 dist/
 build/
 *.log
+*.dll
+*.exe
+*.db
+*.bak
+*.sql
+*.md
 
