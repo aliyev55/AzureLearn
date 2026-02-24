@@ -8,7 +8,7 @@ namespace Data
         public DataContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<DataContext>();
-            optionsBuilder.UseSqlServer("Server=localhost,1433;Initial Catalog=AzureDemoApp;User ID=sa;Password=YourStrong!Password;TrustServerCertificate=True;Encrypt=False;");
+            optionsBuilder.UseSqlServer("Server=tcp:azurelearnsqlservervusal01.database.windows.net,1433;Initial Catalog=AzureDemoApp;User ID=sqladmin;Password=YourStrong123Password;Persist Security Info=False;MultipleActiveResultSets=True;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
 
             return new DataContext(optionsBuilder.Options);
         }
